@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon Card Market Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    body {font-family: 'Inter', sans-serif;}
+    h1, h2 {font-family: 'Bebas Neue', cursive;}
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <header class="bg-blue-700 p-6 text-center shadow-lg">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-wider">DIGIMON CARD MARKET HUB</h1>
+    <p class="mt-2 text-lg md:text-xl">Las cartas más valiosas y noticias del mercado</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    <section id="top-cards" class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Top 10 cartas más valiosas (2024)</h2>
+      <div class="overflow-x-auto shadow rounded-lg ring-1 ring-blue-600/40">
+        <table class="min-w-full table-auto text-sm md:text-base">
+          <thead class="bg-blue-600/90">
+            <tr>
+              <th class="px-4 py-3 text-left">#</th>
+              <th class="px-4 py-3 text-left">Carta</th>
+              <th class="px-4 py-3 text-left">Precio medio (USD)</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray-800 divide-y divide-gray-700">
+            <tr><td class="px-4 py-3">1</td><td>Emperor Greymon (Ultimate Cup 2024)</td><td>$650</td></tr>
+            <tr><td class="px-4 py-3">2</td><td>Gallantmon (Gen Con 2022)</td><td>$540</td></tr>
+            <tr><td class="px-4 py-3">3</td><td>Omnimon (Alternate Art)</td><td>$407</td></tr>
+            <tr><td class="px-4 py-3">4</td><td>Metal Garurumon Ace (Alternate Art)</td><td>$317</td></tr>
+            <tr><td class="px-4 py-3">5</td><td>WereGarurumon Ace (Special Rare)</td><td>$303</td></tr>
+            <tr><td class="px-4 py-3">6</td><td>Angewomon Ace (Special Rare)</td><td>$290</td></tr>
+            <tr><td class="px-4 py-3">7</td><td>Gallantmon (2023 Regionals Champion)</td><td>$275</td></tr>
+            <tr><td class="px-4 py-3">8</td><td>Gallantmon (Ultimate Cup)</td><td>$258</td></tr>
+            <tr><td class="px-4 py-3">9</td><td>Dorugamon (2022 Championship Regional)</td><td>$252</td></tr>
+            <tr><td class="px-4 py-3">10</td><td>Rapidmon (Gold)</td><td>$236</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs mt-3 text-gray-400">*Precios medios estimados (CardGamer & TCGplayer, mayo 2024).</p>
+    </section>
+
+    <section id="price-guide" class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Guías de precios en vivo</h2>
+      <p class="mb-4">Consulta precios actualizados y busca cartas específicas en las siguientes plataformas externas:</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://www.tcgplayer.com/categories/trading-and-collectible-card-games/digimon-card-game/price-guides" target="_blank" rel="noopener" class="text-blue-400 hover:text-yellow-300 underline">TCGplayer Price Guide</a></li>
+        <li><a href="https://digimoncard.io/prices/" target="_blank" rel="noopener" class="text-blue-400 hover:text-yellow-300 underline">DigimonCard.io Price Tracker</a></li>
+      </ul>
+    </section>
+
+    <section id="videos" class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Análisis de mercado reciente</h2>
+      <div class="w-full aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-full rounded-lg shadow-lg"
+          src="https://www.youtube.com/embed/EyTQ2lRe9Ao" 
+          title="Digimon Market Watch - SP Card Value INCREASING" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="newsletter" class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Recibe alertas de nuevas subidas</h2>
+      <form class="sm:flex sm:items-center gap-3" onsubmit="event.preventDefault(); alert('¡Gracias! Te avisaremos.');">
+        <input type="email" required placeholder="tu@email.com" class="flex-1 p-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit" class="mt-3 sm:mt-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow">Suscribirme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-center py-6 text-gray-400 text-sm">
+    © 2025 Digimon Card Market Hub — Datos & precios referenciados de TCGplayer y CardGamer.
+  </footer>
+</body>
+</html>
