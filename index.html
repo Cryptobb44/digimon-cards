@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon 6900 – Card Market Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --digiblue: #0835AA;
+      --digiyellow: #FFD900;
+      --digiorange: #FF6C00;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+    }
+    h1, h2 {
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 0.06em;
+    }
+    header {
+      background: linear-gradient(90deg, var(--digiblue), var(--digiorange));
+    }
+    header h1 {
+      font-size: 4rem;
+      background: linear-gradient(to right, var(--digiyellow), white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url('https://cryptobb-assets.s3.eu-west-1.amazonaws.com/digi6900-logo-bg.png'), url('https://static.wikia.nocookie.net/digimon/images/7/78/Digivice_Background.png');
+      background-repeat: repeat, no-repeat;
+      background-size: 200px auto, cover;
+      background-position: center, center;
+      opacity: 0.08;
+      z-index: -1;
+    }
+    @keyframes bgMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-900 text-gray-100">
+  <header class="bg-[var(--digiblue)] text-center py-10 shadow-lg relative">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-[var(--digiyellow)] drop-shadow-lg">DIGIMON 6900</h1>
+    <p class="text-xl md:text-2xl mt-2 tracking-wide">Premium Digimon Card Market Hub</p>
+    <a href="#" class="inline-block mt-6 px-8 py-4 bg-[var(--digiyellow)] hover:bg-yellow-400 text-gray-900 font-bold rounded-2xl shadow-lg transition">Buy Digi6900</a>
+  </header>
+
+  <main class="flex-1 max-w-6xl mx-auto px-4 py-12">
+    <section id="top-cards" class="mb-16">
+      <h2 class="text-4xl md:text-5xl text-[var(--digiyellow)] mb-8">Top 10 Highest‑Value Cards (2025)</h2>
+      <div class="overflow-x-auto ring-2 ring-[var(--digiblue)]/60 rounded-xl shadow-xl">
+        <table class="min-w-full table-auto text-sm md:text-base">
+          <thead class="bg-[var(--digiblue)]/95">
+            <tr class="text-left">
+              <th class="px-4 py-3">#</th>
+              <th class="px-4 py-3">Card</th>
+              <th class="px-4 py-3">Avg. Price (USD)</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray-800 divide-y divide-gray-700">
+            <tr><td class="px-4 py-3">1</td><td>Imperialdramon: Paladin Mode ACE (Textured)</td><td>$418</td></tr>
+            <tr><td class="px-4 py-3">2</td><td>Mastemon ACE (Textured)</td><td>$383</td></tr>
+            <tr><td class="px-4 py-3">3</td><td>Emperor Greymon (Ultimate Cup 2024)</td><td>$360</td></tr>
+            <tr><td class="px-4 py-3">4</td><td>Gallantmon (Gen Con 2022)</td><td>$340</td></tr>
+            <tr><td class="px-4 py-3">5</td><td>Omnimon (Alternate Art)</td><td>$327</td></tr>
+            <tr><td class="px-4 py-3">6</td><td>Metal Garurumon ACE (Alt Art)</td><td>$295</td></tr>
+            <tr><td class="px-4 py-3">7</td><td>WereGarurumon ACE (SP Rare)</td><td>$278</td></tr>
+            <tr><td class="px-4 py-3">8</td><td>Angewomon ACE (SP Rare)</td><td>$270</td></tr>
+            <tr><td class="px-4 py-3">9</td><td>Gallantmon (Ultimate Cup)</td><td>$258</td></tr>
+            <tr><td class="px-4 py-3">10</td><td>Dorugamon (2022 Regional Champ)</td><td>$252</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs mt-3 text-gray-400">*Prices updated for 2025 – Sources: TCGplayer, CardGamer, TheGamer.</p>
+    </section>
+
+    <section id="market-video" class="mb-16">
+      <h2 class="text-4xl md:text-5xl text-[var(--digiyellow)] mb-8">Latest Market Analysis</h2>
+      <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-xl">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/EyTQ2lRe9Ao" title="Digimon Market Watch – SP Card Value Increasing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="price-guide" class="mb-16">
+      <h2 class="text-4xl md:text-5xl text-[var(--digiyellow)] mb-8">Live Price Resources</h2>
+      <ul class="list-disc list-inside space-y-3">
+        <li><a href="https://www.tcgplayer.com/categories/trading-and-collectible-card-games/digimon-card-game/price-guides" target="_blank" class="text-blue-300 hover:text-yellow-300 underline">TCGplayer Price Guide</a></li>
+        <li><a href="https://digimoncard.io/prices/" target="_blank" class="text-blue-300 hover:text-yellow-300 underline">DigimonCard.io Price Tracker</a></li>
+      </ul>
+    </section>
+
+    <section id="social-x" class="mb-16">
+      <h2 class="text-3xl md:text-4xl text-[var(--digiyellow)] mb-6">Follow Us on X</h2>
+      <p class="mb-3">Stay updated with the latest Digimon 6900 news and market moves.</p>
+      <a href="#" id="x-link-placeholder" class="inline-block px-6 py-3 bg-[var(--digiblue)] hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition">Visit our X profile</a>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-center py-6 text-gray-400 text-sm">
+    © 2025 Digimon 6900 — Data from TCGplayer, TheGamer & CardGamer.
+  </footer>
+</body>
+</html>
