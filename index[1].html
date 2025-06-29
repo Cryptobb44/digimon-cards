@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon 6900 – Card Market Hub</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --digiblue:#005AA9;
+      --digiyellow:#FFD500;
+    }
+    body {font-family:'Inter',sans-serif;}
+    h1,h2 {font-family:'Bebas Neue',cursive; letter-spacing:0.05em;}
+    body::before{
+      content:"";
+      position:fixed;inset:0;
+      background:linear-gradient(135deg,#0a6620 5%,#0d7d29 35%,#0c8b2d 70%,#0a6620 100%);
+      opacity:0.15;
+      background-size:200% 200%;
+      animation:bgMove 15s linear infinite;
+      z-index:-1;
+    }
+    @keyframes bgMove{0%{background-position:0 0;}100%{background-position:100% 100%;}}
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-900 text-gray-100">
+  <header class="bg-[var(--digiblue)] text-center py-10 shadow-lg relative">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-[var(--digiyellow)] drop-shadow-lg">DIGIMON 6900</h1>
+    <p class="text-xl md:text-2xl mt-2 tracking-wide">Premium Digimon Card Market Hub</p>
+    <a href="#" class="inline-block mt-6 px-8 py-4 bg-[var(--digiyellow)] hover:bg-yellow-400 text-gray-900 font-bold rounded-2xl shadow-lg transition">Buy Digi6900</a>
+  </header>
+
+  <main class="flex-1 max-w-6xl mx-auto px-4 py-12">
+    <!-- Main content omitted for brevity... -->
+    <footer class="bg-gray-800 text-center py-6 text-gray-400 text-sm">
+      © 2025 Digimon 6900 — Data from TCGplayer & CardGamer. All trademarks © their respective owners.
+    </footer>
+</body>
+</html>
